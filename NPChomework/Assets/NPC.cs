@@ -7,14 +7,13 @@ public class NPC : MonoBehaviour
     /// <summary>
     /// 對話
     /// </summary>
-    private void talkingmethod()
+    private void talkingmethod(string dialogue)
     {
 
     }
     /// <summary>
     /// 開啟商店
     /// </summary>
-    /// <returns>true</returns>
     public bool openshop()
     {
         return true;
@@ -23,9 +22,9 @@ public class NPC : MonoBehaviour
     /// 購買道具
     /// </summary>
     /// <param name="price">道具金錢為100，傳回值為0</param>
-    public void purchasething(int price = 100)
+    public int purchasething(int price = 100)
     {
-        purchasething(0);
+        return 0;
     }
     /// <summary>
     /// 取得任務
@@ -39,18 +38,18 @@ public class NPC : MonoBehaviour
     /// 任務更新
     /// </summary>
     /// <param name="mission">獲得任務道具數量預設為1</param>
-    private void missionupdate(int mission = 1)
+    private int missionupdate(int mission = 1)
     {
-        missionupdate(0);
+        return 0;
     }
     /// <summary>
     /// 任務完成
     /// </summary>
     /// <param name="missionstatus">任務狀態預設值為false</param>
     /// <param name="missionnumber">任務編號</param>
-    private void missioncomplete(bool missionstatus, string missionnumber)
+    private bool missioncomplete(int indexmission)
     {
-        missioncomplete(false, "任務編號");
+        return false;
 
     }
     // Start is called before the first frame update
